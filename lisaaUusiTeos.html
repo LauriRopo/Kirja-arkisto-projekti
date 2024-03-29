@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="frontend/css/tyylit.css">
+    <!-- <script type="text/javascript" src="src/script.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="frontend/js/script.js"></script>
+    
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 350%;">Lisää uusi teos</h1>
+    </header>
+    <nav>
+        <a href="index.html" >Etusivu</a>
+        <a href="kirjasto.html" >Kirjasto</a>
+        <a href="oma_kirjahylly.html" >Oma Kirjahylly</a>
+        
+    </nav>
+    <nav>
+        <a href="lisaaUusiTeos.html" > Lisää teos</a>
+        <a href="lisaaUusiSarja.html" > Lisää sarja</a>
+        <a href="lisaaUusiHylly.html" > Luo uusi kirjahylly</a>
+
+    </nav>
+    <div class="formContainer1" id="formContainer1">
+        <form id="addNewBookForm">
+        <h2>Lisää hyllyysi teos:</h2>
+
+        <label for="kirjasarja"> Kirjasarja:</label>
+        <select id="sarjalista">
+                <option ></option>;
+        </select>
+
+        <label for="hylly">Kenen kirjahyllyyn lisätään?:</label>
+        <select name="hylly" id="hyllylista">
+                <option></option>
+        </select>
+        <br>
+        <br>
+                <label for="kirjanimi">Teoksen nimi:</label>
+                <input type="text" id="kirjanimi" name="kirjanimi" required>
+        
+                <label for="julkaisuvuosi">Julkaisuvuosi:</label>
+                <input type="number" name="julkaisuvuosi" id="julkaisuvuosi"required>
+
+                <label for="kuvaus">kuvaus:</label>
+                <textarea id="kuvaus" name="kuvaus"></textarea>
+        
+                <label for="kirjailija">kirjailija:</label>
+                <input type="text" name="kirjailija" id="kirjailija" required>
+                
+                <!-- <label for="etukansi">Etukansikuva: </label>
+                <div id="content">
+                <form method="POST" action="" enctype="multipart/form-data">
+                    <div >
+                        <input class="form-control" type="file" name="uploadFront" value="" />
+                    </div>
+                    <label for="takakansi">Takakansikuva:: </label>
+
+                    <div >
+                        <input class="form-control" type="file" name="uploadBack" value="" />
+                    </div>
+                </div> -->
+                <button class="bookFormSubmit" type="submit" >Lisää</button>
+                <a href="oma_kirjahylly.html">Peruuta</a>
+                </form>
+
+        </form>
+        </div>
+</body>
+</html>
+
+<!-- <label for="kirjanimi">Teoksen nimi:</label>
+                <input type="text" id="kirjanimi" name="kirjanimi" required>
+        
+                <label for="jarjestysnumero">Järjestysnumero sarjassa:</label>
+                <input type="number" id="jarjestysnumero" name="jarjestysnumero"required>
+
+                <label for="kirjailija">Kirjailija:</label>
+                <input type="text" id="kirjailija" name="kirjailija"required>
+        
+                <label for="kuvaus">Kuvausteksti:</label>
+                <textarea id="kuvaus" name="kuvaus"></textarea>
+        
+                <label for="taiteilija">Piirtäjät:</label>
+                <input type="text" id="taiteilija" name="taiteilija"required>
+        
+                <label for="painovuosi">Painovuosi:</label>
+                <input type="number" id="painovuosi" name="painovuosi"required>
+        
+                <label for="painos">Painos:</label>
+                <input type="number" id="painos" name="painos"required>
+
+                <label for="kunto">Kunto:</label>
+                <input type="number" id="kunto" name="kunto" max="5" min="1"required>
+
+                <label for="hankintahinta">hankintahinta:</label>
+                <input type="number" id="hankintahinta" name="hankintahinta"required>
+
+                <label for="hankintapvm">Hankinta-aika:</label>
+                <input type="data" id="hankintapvm" name="hankintapvm" placeholder="xx.xx.xxxx"required>
+                <br>
+
+                <label for="etukansi">Etukansikuva: </label>
+                <div id="content">
+                <form method="POST" action="" enctype="multipart/form-data">
+                    <div >
+                        <input class="form-control" type="file" name="uploadFront" value="" />
+                    </div>
+                    <label for="takakansi">Takakansikuva:: </label>
+
+                    <div >
+                        <input class="form-control" type="file" name="uploadBack" value="" />
+                    </div>
+                </div>
+                <button class="bookFormSubmit" type="submit" name="submit" onclick="postBookFormData()">Lisää</button>
+                <a href="oma_kirjahylly.html" onclick="showCollection()">Peruuta</a>
+                </form>
+
+        </form> -->

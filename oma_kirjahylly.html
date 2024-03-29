@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oma-kirjahylly</title>
+    <link href="frontend/css/tyylit.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="frontend/js/script.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1 style="font-size: 350%;">Oma-kirjahylly</h1>
+    </header>
+    <nav>
+        <a href="index.html">Etusivu</a>
+        <a href="kirjasto.html">Kirjasto</a>
+        <a href="oma_kirjahylly.html">Oma Kirjahylly</a>
+
+    </nav>
+
+    
+    <div>
+        <input placeholder="Hae kirjoja" class="haekirjoja" id="findbook2" name="findbook2"></input>
+        <!--KIRJOJEN TIETO TABLE -->
+
+        <table id="omakirjalista">
+            <thead>
+                <tr>
+                    <td>Teoksen nimi:</td>
+                    <td>Painovuosi: </td>
+                    <td>Hankintahinta: </td>
+                    <td>ID:</td>
+                    <td>Toiminnot</td>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Books will be appended here -->
+            </tbody>
+        </table>
+    </div>
+
+    <!--KUN KIRJAN NIMEE CLICKKAA TÄMÄ AUKEE (tällä hetkellä aukeaa kaikkien kirjojen tiedot eikä vain yhden) -->
+    <div id="infoWindow2">
+        <button class="closeButton">Close</button>
+        <table id="omakirjalista">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Teoksen nimi</th>
+                    <th>Kirjailija</th>
+                    <th>Julkaisuvuosi</th>
+                    <th>Kuvaus</th>
+                    <th>hankintahinta</th>
+                    <th>jarjestysnumero</th>
+                    <th>julkaisuvuosi</th>
+                    <th>kunto</th>
+                    <th>myyntihintah</th>
+                    <th>myyntipvm</th>
+                    <th>hankintapvm</th>
+                    <th>painos</th>
+                    <th>painovuosi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Books will be appended here -->
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        &copy; 2024 Kirja-arkisto
+    </footer>
+</body>

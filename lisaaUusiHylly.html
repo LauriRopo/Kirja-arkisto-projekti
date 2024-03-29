@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"type="text/javascript"></script>
+    <script type="text/javascript" src="frontend/js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="frontend/css/tyylit.css">
+   
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 350%;">Lisää uusi hylly</h1>
+    </header>
+    <nav>
+        <a href="index.html" >Etusivu</a>
+        <a href="kirjasto.html" >Kirjasto</a>
+        <a href="oma_kirjahylly.html" >Oma Kirjahylly</a>
+        
+    </nav>
+    <nav>
+        <a href="lisaaUusiTeos.html" > Lisää teos</a>
+        <a href="lisaaUusiSarja.html" > Lisää sarja</a>
+        <a href="lisaaUusiHylly.html" > Luo uusi kirjahylly</a>
+
+    </nav>
+
+     <div class="formContainer3" id="formContainer3">
+        <form id="addNewShelfForm">
+        <h2>Lisää uusi kirjahylly</h2>
+                <label for="hyllynimi"> Hyllyn omistaja:</label>
+                <input type="text" id="omistaja" name="omistaja" required>
+                <button class="bookFormSubmit" type="submit">Lisää</button>
+                <a href="oma_kirjahylly.html">Peruuta</a>
+        </form>
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    
+    
+</body>
+</html>

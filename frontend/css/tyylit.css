@@ -1,0 +1,275 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  font-style: oblique 40deg;
+}
+
+nav {
+  background-color: #444;
+  overflow: hidden;
+}
+
+nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: #333;
+}
+
+.sort-button {
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #444;
+}
+.sort-button:hover {
+  background-color: #333;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.login-form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* Kirjalisäys formin muotoilu!!!!!!!!!!!!!!!!!!!!! */
+
+#formContainer3,
+#formContainer2,
+#formContainer1 {
+  max-width: 600px;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.bookFormSubmit {
+  background-color: #059d4f;
+  color: white;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: auto;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/*Hide the form initially */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+}
+
+th,
+tr,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #dcd7d7;
+}
+
+th {
+  background-color: #c4c7c7;
+  color: white;
+}
+
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+}
+#infoWindow, #infoWindow2 {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid black;
+  padding: 20px;
+  z-index: 9999;
+  /* Ensure it's above other elements */
+}
+
+.closeButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+#infoTable {
+  margin-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
+}
+#infoTable th,
+#infoTable td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+.lisaanappi {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid #4caf50;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.lisaanappi:hover {
+  background-color: brown;
+  color: #4caf50;
+  border-color: #4caf50;
+}
+.haekirjoja {
+  padding: 10px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+}
+
+.haekirjoja:focus {
+  outline: none;
+  animation: rainbowBackground 5s linear infinite;
+}
+
+@keyframes rainbowBackground {
+  0% {
+    background-color: #ff0000;
+  }
+  14% {
+    background-color: #ff7f00;
+  }
+  28% {
+    background-color: #ffff00;
+  }
+  42% {
+    background-color: #00ff00;
+  }
+  57% {
+    background-color: #0000ff;
+  }
+  71% {
+    background-color: #4b0082;
+  }
+  85% {
+    background-color: #9400d3;
+  }
+  100% {
+    background-color: #ff0000;
+  }
+}
+.reg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.regi{
+  padding: 5px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  background-color: transparent;
+  transition: background-color 0.5s ease;
+}
+
+.kirlista{
+  margin-bottom: 100px;
+}
+
+.registerdiv{
+position: center;
+align-items: right;
+  background-color: #cec8c8;
+  padding: 10px;
+  border-width: 2px;
+  border-color: #333;
+  color: #c70505;
+}

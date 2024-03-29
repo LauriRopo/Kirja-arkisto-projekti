@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="frontend/css/tyylit.css" rel="stylesheet" type="text/css">
+    <!-- <script type="text/javascript" src="src/script.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/frontend/js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 350%;">Lisää uusi sarja</h1>
+    </header>
+    <nav>
+        <a href="index.html" >Etusivu</a>
+        <a href="kirjasto.html" >Kirjasto</a>
+        <a href="oma_kirjahylly.html" >Oma Kirjahylly</a>
+        
+    </nav>
+    <nav>
+        <a href="lisaaUusiTeos.html" > Lisää teos</a>
+        <a href="lisaaUusiSarja.html" > Lisää sarja</a>
+        <a href="lisaaUusiHylly.html" > Luo uusi kirjahylly</a>
+
+    </nav>
+
+    <div class="formContainer2" id="formContainer2">
+        <form id="addSeriesForm">
+        <h2>Lisää uusi sarja:</h2>
+                <label for="Sarjan nimi">Nimi:</label>
+                <input type="text" id="sarjanimi" name="sarjanimi" required>
+        
+                <label for="kustantaja">Kustantaja:</label>
+                <input type="text" id="kustantaja" name="kustantaja"required>
+
+                <label for="kuvaus">Kuvaus:</label>
+                <textarea type="text" id="kuvaus" name="kuvaus"required></textarea>
+
+                <label for="luokittelu">Genre:</label>
+                <input type="text" id="luokittelu" name="luokittelu"required>
+        
+                <button class="bookFormSubmit" type="submit" name="submit">Lisää</button>
+                <a href="oma_kirjahylly.html">Peruuta</a>
+        </form>
+    </div>
+</body>
+</html>

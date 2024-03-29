@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="frontend/css/tyylit.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="frontend/js/script.js"></script>
+</head>
+
+
+<body>
+    <header>
+        <h1 style="font-size: 350%;">Kirjasto</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Etusivu</a>
+        <a href="kirjasto.html">Kirjasto</a>
+        <a href="oma_kirjahylly.html">Oma Kirjahylly</a>
+    </nav>
+    <nav>
+        <a href="lisaaUusiTeos.html"> Lisää teos</a>
+        <a href="lisaaUusiSarja.html"> Lisää sarja</a>
+        <a href="lisaaUusiHylly.html"> Luo uusi kirjahylly</a>
+
+    </nav>
+
+    <input placeholder="Hae kirjoja" class="haekirjoja" id="findbook" name="findbook"></input>
+    <!--KIRJOJEN TIETO TABLE -->
+    <table id="kirjaLista" class="kirlista">
+
+
+        
+        <label for="hylly">Kirjahylly   </label>
+        <select name="hyllylista" id="hyllylista">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Teoksen nimi</th>
+                <th>Kirjailija</th>
+                <th>Julkaisuvuosi</th>
+                <th>Kuvaus</th>
+                <th>kirjasarja</th>
+                <th>Lisää kirja omaan hyllyyn</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+
+    <!--KUN KIRJAN NIMEE CLICKKAA TÄMÄ AUKEE (tällä hetkellä aukeaa kaikkien kirjojen tiedot eikä vain yhden) -->
+    <div id="infoWindow">
+        <button class="closeButton">Close</button>
+        <table id="kirjaLista">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Teoksen nimi</th>
+                    <th>Kirjailija</th>
+                    <th>Julkaisuvuosi</th>
+                    <th>Kuvaus</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Books will be appended here -->
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        &copy; 2024 Kirja-arkisto
+    </footer>
+</body>
+
+</html>
